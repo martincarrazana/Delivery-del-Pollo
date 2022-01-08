@@ -1,0 +1,25 @@
+{
+  "name": "deliverydelpollosass",
+  "version": "1.0.0",
+  "description": "proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilosSCSS.scss css/estilosCSS.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martincarrazana/Delivery-del-Pollo.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Martin Carrazana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martincarrazana/Delivery-del-Pollo/issues"
+  },
+  "homepage": "https://github.com/martincarrazana/Delivery-del-Pollo#readme"
+}
