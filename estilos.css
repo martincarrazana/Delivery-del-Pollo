@@ -25,19 +25,16 @@ li {
 
 
 ul li a:hover {
-  background-color: red;
-  color: white;
-  padding: 4px;
-}
-
-ul li a:hover {
-  background-color: red;
+  background-color:red
   color: white;
   padding: 4px;
 }
 
 .back {
-  background-color: yellow;
+
+  background-image: url(./multimedia/back.jpg);
+  background-size: 100%;
+
 }
 
 .dely {
@@ -55,9 +52,9 @@ ul li a:hover {
   transform: rotate(360deg);
 }
 
-
 .comunicacion {
   text-align: center;
+
 }
 
 .color {
@@ -65,6 +62,9 @@ ul li a:hover {
   color: darkred;
   text-align: center;
 }
+
+
+
 
 h1 {
   font-family: 'Dancing Script', cursive;
@@ -81,15 +81,17 @@ h1 {
 }
 
 h2 {
+
   font-size: 25px;
   text-align: center;
   border-top-color: darkgrey;
   color: indigo;
   font-family: 'Dancing Script', cursive;
+
 }
 
 h2:hover {
-  background-color: yellowgreen;
+  background-color:rgb(219, 219, 168);
   color: white;
   padding: 4px;
   border-bottom-width: 8px;
@@ -142,6 +144,9 @@ h2:hover {
   bottom: -25px;
 }
 
+
+
+
 h3 {
   font-size: 15px;
   text-align: center;
@@ -153,6 +158,7 @@ h3 {
   padding: 10px;
   border: 5px solid gray;
   margin: 0;
+
 }
 
 .oferta2 {
@@ -169,6 +175,8 @@ h3 {
   margin: 0;
 }
 
+
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -178,47 +186,38 @@ h3 {
 }
 
 .grid-container>div {
-  background-image: url(./multimedia/back.jpg);
-  background-repeat: repeat;
-  background-size: 100%;
+  background-color: rgba(255, 255, 255, 1);
   border: 10px solid black;
   text-align: center;
   font-size: 150px;
 }
 
-
 .box-1 {
   grid-area: box1;
-  background-color: red;
-  margin: 10px;
+
 }
 
 .box-2 {
   grid-area: box2;
-  background-color: violet;
-  margin: 10px;
+
 }
 
 .box-3 {
   grid-area: box3;
-  background-image: url(./multimedia/back.jpg);
-  background-repeat: repeat;
-  background-size: 100%;
-  margin: 10px;
+  
+}
+
 }
 
 .box-4 {
   grid-area: box4;
-  background-color: yellow;
-  margin: 10px;
+
 }
 
 .box-5 {
   grid-area: box5;
-  background-color: lightgray;
-  margin: 10px;
-}
 
+}
 
 .flex-container {
   display: flex;
@@ -253,10 +252,37 @@ section {
   color: #F83319;
 }
 
-@media only screen and (max-width: 360px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33% 33% 34%;
-    grid-template-areas: "auto"}
+@media only screen and (min-width: 1210px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .box-2 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+   }
+     .box-1 {
+     grid-row: 1 / 2;
+     grid-column: 3 / 5;
+   }
+     .box-3 {
+     grid-column: 3 / 5;
+     grid-row: 2 / 3;
+   }
+  
+   .box-4 {
+     grid-column: 1 / 2;
+     grid-row: 3 / 4;
+   }
+
+   .box-5 {
+     grid-column: 2 / 4;
+     grid-row: 3 / 4;
+   }
+}
