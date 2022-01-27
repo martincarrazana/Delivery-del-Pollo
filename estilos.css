@@ -26,8 +26,8 @@ li {
 
 ul li a:hover {
   background-color:red
-  color: white;
-  padding: 4px;
+  
+
 }
 
 .back {
@@ -207,7 +207,7 @@ h3 {
   
 }
 
-}
+
 
 .box-4 {
   grid-area: box4;
@@ -258,7 +258,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
   }
